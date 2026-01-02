@@ -1,0 +1,31 @@
+[debug] [2026-01-02T18:22:44.004Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T18:22:44.013Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\BALAJI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-01-02T18:22:44.014Z] CLI Version:   15.1.0
+[debug] [2026-01-02T18:22:44.014Z] Platform:      win32
+[debug] [2026-01-02T18:22:44.015Z] Node Version:  v24.12.0
+[debug] [2026-01-02T18:22:44.015Z] Time:          Fri Jan 02 2026 10:22:44 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T18:22:44.015Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T18:22:47.597Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-02T18:22:47.598Z] > authorizing via signed-in user (starpokemon847@gmail.com)
+[debug] [2026-01-02T18:22:47.599Z] [iam] checking project yuji-project for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-02T18:22:47.602Z] Checked if tokens are valid: true, expires at: 1767380800538
+[debug] [2026-01-02T18:22:47.602Z] Checked if tokens are valid: true, expires at: 1767380800538
+[debug] [2026-01-02T18:22:47.604Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/yuji-project:testIamPermissions [none]
+[debug] [2026-01-02T18:22:47.604Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/yuji-project:testIamPermissions x-goog-quota-user=projects/yuji-project
+[debug] [2026-01-02T18:22:47.605Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/yuji-project:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-02T18:22:49.604Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/yuji-project:testIamPermissions 200
+[debug] [2026-01-02T18:22:49.605Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/yuji-project:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-02T18:22:49.607Z] Checked if tokens are valid: true, expires at: 1767380800538
+[debug] [2026-01-02T18:22:49.608Z] Checked if tokens are valid: true, expires at: 1767380800538
+[debug] [2026-01-02T18:22:49.609Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/yuji-project [none]
+[debug] [2026-01-02T18:22:50.202Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/yuji-project 200
+[debug] [2026-01-02T18:22:50.202Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/yuji-project {"projectId":"yuji-project","projectNumber":"324082256206","displayName":"yuji project","name":"projects/yuji-project","resources":{"hostingSite":"yuji-project"},"state":"ACTIVE","etag":"1_3d3af72d-27be-498a-82cd-a2b967d8cb0a"}
+[info] 
+[info] === Deploying to 'yuji-project'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-01-02T18:22:50.223Z] Checked if tokens are valid: true, expires at: 1767380800538
+[debug] [2026-01-02T18:22:50.223Z] Checked if tokens are valid: true, expires at: 1767380800538
+[debug] [2026-01-02T18:22:50.224Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/yuji-project/versions [none]
+[debug] [2026-01-02T18:22:50.224Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/yuji-project/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

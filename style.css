@@ -1,0 +1,14 @@
+.box {
+  width: 200px;
+  animation: spin 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
